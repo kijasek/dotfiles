@@ -21,6 +21,12 @@ border_width = 0
 background_color = #FFFFFF 16
 border_color = #FFFFFF 68
 
+# ID 4
+rounded = 7
+border_width = 1
+background_color = #FFFFFF 60
+border_color = #000000 80
+
 # Panel
 panel_monitor = all
 panel_position = top center horizontal
@@ -77,9 +83,9 @@ font_shadow = 0
 systray = 1
 systray_padding = 0 4 5
 systray_sort = ascending
-systray_background_id = 0
+systray_background_id = 4
 systray_icon_size = 16
-systray_icon_asb = 70 0 0
+systray_icon_asb = 100 0 0
 
 # Clock
 time1_format = %H:%M
@@ -119,10 +125,10 @@ battery_background_id = 0
 # Launchers
 launcher_icon_theme=AwOkenDark
 launcher_item_app=/usr/share/applications/firefox.desktop
+launcher_item_app=/usr/share/applications/chromium-browser.desktop
 launcher_item_app=/usr/share/applications/pcmanfm.desktop
 launcher_item_app=/usr/share/applications/urxvt.desktop
-launcher_item_app=/home/tkijas/.local/share/applications/eclipse_kepler.desktop
-launcher_item_app=/usr/share/applications/mysql.desktop
+launcher_item_app=/usr/share/applications/eclipse_kepler.desktop
 launcher_item_app=/usr/share/applications/synergy.desktop
 launcher_item_app=/usr/share/applications/medit.desktop
 # End of config
