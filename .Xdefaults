@@ -1,5 +1,6 @@
 urxvt*foreground: white
-urxvt*background: black
+# uncomment below line for fake transparency
+#urxvt*background: black
 
 ! Tango
 !*color0:  #2E3436
@@ -38,8 +39,8 @@ URxvt*color13: #ec93d3
 URxvt*color14: #93e0e3
 URxvt*color15: #ffffff
 
-
-urxvt*transparent: true
+# uncomment below line for fake transparency
+#urxvt*transparent: true
 urxvt*font: xft: Dejavu Sans Mono:autohint=true:antialias=true:size=11
 urxvt*shading: 15
 urxvt*scrollBar: false
@@ -53,3 +54,11 @@ urxvt*scrollTtyOutput: false
 urxvt*scrollWithBuffer: true
 ! scroll back to the bottom on keypress
 urxvt*scrollTtyKeypress: true
+
+# comment below 2 lines for fake transparency
+URxvt*depth: 32
+URxvt*background: rgba:0000/0000/0200/c800
+
+# custom icon for URXVT
+URxvt*iconFile: /home/tkijas/.icons/Moka/32x32/apps/urxvt.png
+
