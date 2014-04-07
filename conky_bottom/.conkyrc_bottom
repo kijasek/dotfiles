@@ -1,0 +1,75 @@
+# Minimalist conkyrc - Citrus theme
+# by mdh3ll
+#
+# used fonts
+#---------------------------------------------------------------------#
+# openlogos			=> http://gnome-look.org/content/show.php/OpenLogos?content=54390
+# PF Tempesta Seven	=> http://www.dafont.com/pf-tempesta-seven.font
+#---------------------------------------------------------------------#
+
+#avoid flicker
+double_buffer yes
+
+#own window to run simultanious 2 or more conkys
+#own_window  yes
+#own_window_transparent true
+#own_window_type normal
+#own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+#
+background yes
+own_window yes
+own_window_class conky
+own_window_transparent yes
+own_window_type override
+own_window_argb_visual no
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+
+
+# Borders
+draw_borders no
+#border_outer_margin 2
+
+# Contour
+draw_outline no
+
+# Shades
+draw_shades no
+default_shade_color 000000
+
+# Position
+gap_y 0
+gap_x 1920
+
+# Alignment
+alignment bottom_left
+# alignment top_middle
+
+# Interval
+update_interval 2
+
+# Color
+default_color FFFFFF
+color1 f8f8f2
+color2 f8f8f2
+color3 e6db74
+color4 66d9ef
+color5 f92672
+
+# Font
+use_xft yes
+xftfont Open Sans Light:size=14
+
+# Text alpha when using Xft
+#xftalpha 0.10
+
+# to prevent window from moving
+use_spacer none
+minimum_size 2560 0
+
+TEXT
+${color5}\# ${color2}CPU:${color3} ${cpu cpu0}% ${color5}\# \
+${color2}Ram:${color3} ${mem} ${color5}\# \
+${color2}IP:${color3} ${addr eth0} ${color5}\# \
+${color2}Uptime:${color3} ${uptime} ${color5}\# \
+${color2}Eth0:${color4} DOWN ${color3}${downspeed eth0} ${color4}UP ${color3}${upspeed eth0} ${color5}\# \
+${color2}Top:${color3} ${top name 1}${top cpu 1}${top mem 1}
